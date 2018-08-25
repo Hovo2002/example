@@ -26,8 +26,17 @@ import CircleProgress from './CircleProgress';
 import LinearProgress from './LinearProgress';
 import Checkbox from './Checkbox';
 import CustomizedSwitches from './CustomizedSwitches';
+import OpenSelect from './OpenSelect';
+import Snackbar from './Snackbar';
+import StepperCarousel from './StepperCarousel';
+import Table from './Table';
+import Tab from './Tab'; 
+import TextField from './TextField';
+import ToolTip from './ToolTip';
+
 import { withStyles } from "@material-ui/core/styles";
 import PropTypes from "prop-types";
+
 
 class App extends Component {
   render() {
@@ -86,6 +95,27 @@ class App extends Component {
         <div>
           <CustomizedSwitches/>
         </div>
+        <div className={classes.select}>
+          <OpenSelect/>
+        </div>
+        <div>
+          <Snackbar/>
+        </div>
+        <div>
+          <StepperCarousel/>
+        </div>
+        <div>
+          <Table/>
+        </div>
+        <div className={classes.tab}>
+          <Tab/>
+        </div>
+        <div>
+          <TextField/>
+        </div>
+        <div>
+          <ToolTip/>
+        </div>
       </div>
     );
   }
@@ -125,6 +155,12 @@ const styles = theme => ({
   progress:{
     margin:50
   },
+  select:{
+    textAlign:"left"
+  },
+  tab:{
+    marginTop:25
+  }
 });
  
 
